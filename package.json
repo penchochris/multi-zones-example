@@ -1,0 +1,13 @@
+{
+  "name": "multi-zones-example",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=appA & npm run dev --workspace=appB & wait",
+    "build": "npm run build --workspace=appB && npm run build --workspace=appA",
+    "start": "npm run start --workspace=appA & npm run start --workspace=appB & wait"
+  }
+}

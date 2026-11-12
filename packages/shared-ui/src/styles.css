@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  color: #111;
+  background: #fafafa;
+}
+
+.mz-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.mz-nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 16px 24px;
+  background: #111;
+  color: #fff;
+}
+
+.mz-nav nav {
+  display: flex;
+  gap: 16px;
+}
+
+.mz-nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.mz-nav a:hover {
+  text-decoration: underline;
+}
+
+.mz-zone {
+  margin-left: auto;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.mz-main {
+  flex: 1;
+  padding: 32px 24px;
+}
+
+.mz-footer {
+  padding: 16px 24px;
+  background: #eee;
+  border-top: 1px solid #ddd;
+  font-size: 14px;
+  text-align: center;
+}
